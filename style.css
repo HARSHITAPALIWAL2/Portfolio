@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=EB+Garamond:ital@0;1&family=Space+Mono&display=swap');
+body{
+    overflow-x: hidden;
+    background-color: #000;
+    width: 100lvw;
+    font-family: monospace;
+}
+.font{
+    font-family: "EB Garamond", serif;
+    font-style: italic;
+    font-weight: 100;
+}
+.home{
+    height: 100vh;
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-weight: 400;
+}
+
+.home h1{
+    margin: 5px;
+    font-size: 72px;
+    text-shadow: 0 0 5px #fff
+}
+.home h3{
+    margin: 5px;
+    font-size: 24px;
+    font-family: inter;
+}
+.about{
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #111827;
+    color: white;
+    height: auto;
+    padding: 60px;
+}
+.text{
+    width: 60vw;
+    font-size: 19px;
+}
+.text h2{
+    font-size: 30px;
+}
+.img img{
+    width: 20vw;
+}
+.btn{
+    margin: 25px;
+    font-size: 17px;
+    font-family: inter;
+}
+.button{
+    background-color: #ff8c00;
+    padding: 15px;
+    border-radius: 25px;
+    color: black;
+    text-decoration: none;
+    margin: 25px;
+}
+.col img{
+    width: 75px;
+    height: auto;
+    filter: invert(.4);
+}
+.col img:hover{
+    filter: invert(1);
+    transform: scale(1.4);
+    transition: .5s;
+}
+.col{
+    /* width: 60vw; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 25px;
+}
+.lang{    
+    /* display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column; */
+    padding: 50px;
+}
+h1{
+    font-family: inter;
+}
+.lang h1{
+    color: white;
+    /* text-align: left; */
+}
+.certificate{
+    color: white;
+    padding: 50px;
+}
+.cards{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.card{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+}
+.card:hover{
+    background-color: #282828;
+    transform: scale(1.1);
+    transition: .5s;
+}
+.mode{
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    position: absolute;
+    top: 25px;
+    right: 10px;
+    border: #000 1px solid;
+}
+.card img{
+    width: 400px;
+    height: auto;
+}

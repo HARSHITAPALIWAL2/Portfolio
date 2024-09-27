@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harshita Paliwal</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="mode" onclick="mode()">
+        <i class="fa-solid fa-sun"></i>
+        <i class="fa-solid fa-moon" style="display: none;"></i>
+    </div>
+    <div class="home">
+        <h1>Harshita <span class="font">Paliwal</span></h1>
+        <h3>Web Developer</h3>
+        <div class="btn">
+            <a class="button" href="https://github.com/HARSHITAPALIWAL2"><i class="fa-brands fa-github"></i> GITHUB</a>
+            <a class="button" href="https://www.linkedin.com/in/harshita-paliwal-629b9b294?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i> LINKEDIN</a>
+        </div>
+    </div>
+    <div class="about">
+        <div class="img">
+            <img src="./photo.png" alt="">
+        </div>
+        <div class="text">
+        <h1>About Me</h1>
+        <p>I’m Harshita Paliwal, a B.Tech student passionate about web development and technology. With skills in both frontend and backend technologies like React, Node.js, and MongoDB, I enjoy creating user-friendly and efficient solutions. My love for problem-solving drives me to continuously learn and improve my coding abilities, making me a dedicated and curious developer.</p>
+        </div>
+    </div>
+    <div class="lang">
+        <h1>Tech I Know...</h1>
+        <div class="col">
+            <img src="https://cdn.jsdelivr.net/npm/simple-icons@13.11.0/icons/html5.svg" alt="" class="list">
+            <img src="https://cdn.jsdelivr.net/npm/simple-icons@13.11.0/icons/css3.svg" alt="" class="list">
+            <img src="https://cdn.jsdelivr.net/npm/simple-icons@13.11.0/icons/javascript.svg" alt="" class="list">
+            <img src="https://cdn.jsdelivr.net/npm/simple-icons@13.11.0/icons/react.svg" alt="" class="list">
+            <img src="https://cdn.jsdelivr.net/npm/simple-icons@13.11.0/icons/cplusplus.svg" alt="" class="list">
+        </div>
+    </div>
+    <div class="certificate">
+        <h1>My Certificates...</h1>
+        <div class="cards">
+            <div class="card">
+                <img src="./certi1.jpg" alt="">
+                <div class="content">
+                    <h2>Prayatna - National Level Hackathon</h2>
+                    <p>~AITR, Indore</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./certi2.jpg" alt="">
+                <div class="content">
+                    <h2>HackWave - National Level Hackathon</h2>
+                    <p>~CDGI, Indore</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./certi3.jpg" alt="">
+                <div class="content">
+                    <h2>javaScript Bootcamp</h2>
+                    <p>~Lets Upgrade</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/100565660a.js" crossorigin="anonymous"></script>
+    <script>
+        function mode(){
+            let sun=document.querySelector(".fa-sun");
+            let moon=document.querySelector(".fa-moon");
+            if(moon.style.display=='none'){
+                sun.style.display='none'
+                moon.style.display='block'
+                document.querySelector("body").style.backgroundColor='white'
+                document.querySelector(".home").style.color="black"
+                document.querySelector(".home h1").style.textShadow="0 0 5px #000"
+                document.querySelector(".cards").style.color="black"
+            }else{
+                moon.style.display='none'
+                sun.style.display='block'
+                document.querySelector("body").style.backgroundColor='black'
+                document.querySelector(".home").style.color="white"
+                document.querySelector(".home h1").style.textShadow="0 0 5px #fff"
+                document.querySelector(".cards").style.color="white"
+            }
+        }
+    </script>
+</body>
+</html>
