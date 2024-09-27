@@ -36,6 +36,7 @@ body{
     /* flex-direction: column; */
     justify-content: space-evenly;
     align-items: center;
+    flex-wrap: wrap;
     background-color: #111827;
     color: white;
     height: auto;
@@ -126,6 +127,7 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     border-radius: 10px;
     position: absolute;
     top: 25px;
