@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Harshita Paliwal</title>
+    
     <link rel="stylesheet" href="./style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,8 +16,12 @@
         <i class="fa-solid fa-moon" style="display: none;"></i>
     </div>
     <div class="home">
-        <h1>Harshita <span class="font">Paliwal</span></h1>
-        <h3>Web Developer</h3>
+        <div>
+            <h1>Harshita <span class="font">Paliwal</span></h1>
+        </div>
+        <div>
+            <h3>Web Developer</h3>
+        </div>
         <div class="btn">
             <a class="button" href="https://github.com/HARSHITAPALIWAL2"><i class="fa-brands fa-github"></i> GITHUB</a>
             <a class="button" href="https://www.linkedin.com/in/harshita-paliwal-629b9b294?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i> LINKEDIN</a>
@@ -79,6 +84,8 @@
                 document.querySelector(".home").style.color="black"
                 document.querySelector(".home h1").style.textShadow="0 0 5px #000"
                 document.querySelector(".cards").style.color="black"
+                document.querySelector(".lang h1").style.color="black"
+                document.querySelector(".certificate h1").style.color="black"
             }else{
                 moon.style.display='none'
                 sun.style.display='block'
@@ -86,6 +93,8 @@
                 document.querySelector(".home").style.color="white"
                 document.querySelector(".home h1").style.textShadow="0 0 5px #fff"
                 document.querySelector(".cards").style.color="white"
+                document.querySelector(".lang h1").style.color="white"
+                document.querySelector(".certificate h1").style.color="white"
             }
         }
     </script>

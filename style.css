@@ -19,24 +19,58 @@ body{
     align-items: center;
     flex-direction: column;
     font-weight: 400;
+    animation: app 1.5s linear;
 }
 
 .home h1{
     margin: 5px;
     font-size: 72px;
-    text-shadow: 0 0 5px #fff
+    text-shadow: 0 0 5px #fff;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 .home h3{
     margin: 5px;
     font-size: 24px;
     font-family: inter;
+    width: 0;
+    border-right: solid 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: 
+    cursors .4s step-end infinite alternate,
+    typing 2s steps(13) forwards;
+    animation-delay: 2s;
+}
+@keyframes typing {
+    from{
+        width: 0;
+    }
+    to{
+        width: 100%;
+    }
+}
+@keyframes cursors{
+    50%{
+        border-color: transparent;
+    }
+}
+@keyframes app {
+    0% {
+    transform: translateY(10%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
 }
 .about{
     display: flex;
     /* flex-direction: column; */
     justify-content: space-evenly;
     align-items: center;
-    flex-wrap: wrap;
     background-color: #111827;
     color: white;
     height: auto;
@@ -56,6 +90,8 @@ body{
     margin: 25px;
     font-size: 17px;
     font-family: inter;
+    display: flex;
+
 }
 .button{
     background-color: #ff8c00;
@@ -65,14 +101,19 @@ body{
     text-decoration: none;
     margin: 25px;
 }
+.button:hover{
+    box-shadow: 0 0 20px #ff8c00;
+    transition: .2s;
+}
 .col img{
     width: 75px;
     height: auto;
     filter: invert(.4);
+    margin: 20px;
 }
 .col img:hover{
-    filter: invert(1);
-    transform: scale(1.4);
+    filter: invert(1) drop-shadow(0 0 5px #ff8c00);
+    transform: scale(1.2);
     transition: .5s;
 }
 .col{
@@ -114,6 +155,7 @@ h1{
     flex-direction: column;
     align-items: center;
     border-radius: 10px;
+    padding: 20px;
 }
 .card:hover{
     background-color: #282828;
@@ -128,14 +170,43 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
     border-radius: 10px;
-    position: absolute;
+    position: sticky;
     top: 25px;
-    right: 10px;
+    left: 96%;
     border: #000 1px solid;
 }
 .card img{
     width: 400px;
     height: auto;
+}
+
+@media (max-width:650px) {
+    .card{
+        width: 80%;
+    }
+    .card img{
+        width: 75%;
+    }
+    .about{
+        flex-direction: column;
+        text-align: justify;
+        padding: 10px;
+    }
+    .img img{
+        width: 80%;
+    }
+    .img{
+        display: flex;
+        justify-content: center;
+    }
+    .button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    h1{
+        text-align: center;
+    }
 }
